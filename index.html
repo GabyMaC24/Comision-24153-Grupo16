@@ -5,7 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -196,9 +197,37 @@
       </section>
 
       <section id="Contacto" class="gapSection">
-        <h2 class="ttlContacto">CONTACTO</h2>
+        <span class="ttlContacto">CONTACTO</span>
         <div class="containerContactBig">
-            <div class="containerContact">Hacer formulario aquí</div>
+            <div class="containerContact">
+                <span class="contactoFormulario">Contactate con nosotros<br></span>
+                <span class="contactoTexto">Completa el formulario y comentanos tus sugerencias, te responderemos a la brevedad!</span>
+                <img src="../img/imagen-contacto.jpg" alt="imagen de contacto" width="100%">
+            </div>
+            <div class="containerContact">
+                <form action="">
+                    <p>
+                        <label class="labels" for="nombre">Nombre</label>
+                        <br>
+                        <input class="formContacto" size="50%" type="text">
+                    </p>
+                    <p>
+                        <label class="labels" for="telefono">Telefono</label>
+                        <br>
+                        <input class="formContacto" type="text">
+                    </p>
+                    <p>
+                        <label class="labels" for="tipoConsulta">Tipo</label>
+                        <br>
+                        <input class="formContacto" type="text">
+                    </p>
+                    <p>
+                        <label class="labels" for="mensaje">Mensaje</label>
+                        <br>
+                        <input class="formContacto" type="text">
+                    </p>
+                </form>
+            </div>
         </div>
       </section>
 

@@ -214,7 +214,11 @@ body {
 
 /* CONTACTO*/
 .ttlContacto{
-    text-align: center;
+    color:#434343;
+    font-size: 4em;
+    font-family: "Montserrat",Helvetica,Arial,Verdana,sans-serif;
+    display: flex;
+    justify-content: center;
 }
 .containerContactBig{
     display: flex;
@@ -224,9 +228,10 @@ body {
     /*background-color: #423c3c;*/
 }
 .containerContact{
-    background-color: #909e91;
-    width: 70%;
-    height: 500px;
+    /* background-color: #909e91; */
+    /* background-color: #fbfbfb; */
+    width: 50%;
+    height: 700px;
     /*height: auto;*/
     padding: 1rem;
     border-radius: 20px;
@@ -234,6 +239,34 @@ body {
     margin-bottom: 50px;
     border: solid #ffffff;
     border-width: 0.3rem 0.3rem 0.3rem 0.3rem;
+    font-family: "Montserrat",Helvetica,Arial,Verdana,sans-serif;
+    color:#434343;
+}
+.contactoFormulario {
+    display: flex;
+    font-size: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+.contactoTexto {
+    display: flex;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+.labels {
+    /* display: flex; */
+    font-size: 15px;
+    color: #787D85;
+}
+.formContacto {
+    display: flex;
+    margin-top: 2px;
+    height: 35px;
+    width: 400px;
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 2px;
 }
 
 /* Footer */
