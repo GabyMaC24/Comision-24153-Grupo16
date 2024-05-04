@@ -228,11 +228,8 @@ body {
     /*background-color: #423c3c;*/
 }
 .containerContact{
-    /* background-color: #909e91; */
-    /* background-color: #fbfbfb; */
     width: 50%;
     height: 700px;
-    /*height: auto;*/
     padding: 1rem;
     border-radius: 20px;
     margin-top: 1rem;
@@ -240,7 +237,7 @@ body {
     border: solid #ffffff;
     border-width: 0.3rem 0.3rem 0.3rem 0.3rem;
     font-family: "Montserrat",Helvetica,Arial,Verdana,sans-serif;
-    color:#434343;
+    color:#7e1d1d;
 }
 .contactoFormulario {
     display: flex;
@@ -254,19 +251,43 @@ body {
     margin-bottom: 3em;
     font-size: 1.4em;
     line-height: 1.5em;
+    color: #981363;
 }
 .labels {
-    /* display: flex; */
     font-size: 15px;
     color: #787D85;
 }
 .formContacto {
     display: flex;
     margin-top: 2px;
-    height: 35px;
-    width: 400px;
-    border: 1px solid rgb(146, 146, 146);
+    width: 100%;
+    padding-left: 10px;
+    border: 1px solid rgb(208, 207, 207);
     border-radius: 2px;
+    outline: none;
+    color: rgb(130, 130, 130);
+    font-family: "Montserrat",Helvetica,Arial,Verdana,sans-serif;
+}
+.frmInput, .frmSelect, .frmBoton {
+    height: 35px;
+}
+.frmTextarea {
+    resize: none;
+}
+.frmBoton {
+    display: flex;
+    transition-duration: 0.5s;
+    margin-top: 25px;
+    background-color: #100101;
+    color: #ffffff;
+    font-weight: bold;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.frmBoton:hover {
+    background-color: #53b182;
+    transition-duration: 0.5s;
 }
 
 /* Footer */
