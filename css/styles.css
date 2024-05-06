@@ -221,25 +221,29 @@ body {
     justify-content: center;
 }
 .containerContactBig{
+
+    flex-wrap: wrap;
+    /* justify-content:space-evenly; */
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    /*background-color: #423c3c;*/
+    border: solid #ffffff;
+    border-width: 0.3rem 0.3rem 0.3rem 0.3rem;
+    border-radius: 20px;
 }
-.containerContact{
+
+.containerContacto {
     width: 50%;
     height: 700px;
     padding: 1rem;
-    border-radius: 20px;
     margin-top: 1rem;
     margin-bottom: 50px;
-    border: solid #ffffff;
-    border-width: 0.3rem 0.3rem 0.3rem 0.3rem;
     font-family: "Montserrat",Helvetica,Arial,Verdana,sans-serif;
     color:#7e1d1d;
 }
-.contactoFormulario {
+.contactoTitulo {
     display: flex;
     font-size: 3em;
     margin-top: 0.5em;
@@ -278,7 +282,7 @@ body {
     display: flex;
     transition-duration: 0.5s;
     margin-top: 25px;
-    background-color: #100101;
+    background-color: #f6abab;
     color: #ffffff;
     font-weight: bold;
     justify-content: center;
@@ -286,9 +290,60 @@ body {
     cursor: pointer;
 }
 .frmBoton:hover {
-    background-color: #53b182;
+    background-color: #4a0f41;
+    /* background-color: #53b182; */
     transition-duration: 0.5s;
 }
+/* Estilo y animacion para ventana emergente */
+/* Estilos para la ventana de diálogo */
+.dialog-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.5s;
+  }
+  
+  .dialog-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    animation: slideDown 0.5s;
+  }
+  
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes slideDown {
+    from {top: -300px;}
+    to {top: 0;}
+  }
+  
+
 
 /* Footer */
 .footer {
@@ -305,9 +360,22 @@ body {
     font-size: small;
 }
 
-/* Responsive 700px wide */
-@media screen and (max-width: 700px) {
-  .row, .navbar, .flavorsFlexBx {   
-    flex-direction: column;
-  }
+@media screen and (max-width: 1300px) {
+    .containerContacto {
+      width: 100%;
+    }
+  
+    .containerContactBig {
+      flex-direction: column;
+    }
+}
+
+  /* Responsive 700px wide */
+  @media screen and (max-width: 700px) {
+    .row, .navbar, .flavorsFlexBx, .containerContactBig {
+      flex-direction: column;
+    }
+    .containerContacto {
+        width: 100%;
+    }
 }
