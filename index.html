@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <title>Galipolli Helados</title>
@@ -281,42 +281,56 @@
                         </div>
                         <div class="containerContacto">
                             <form id="contactForm" action="">
-                                <p>
-                                    <label class="labels" for="nombre">Nombre</label>
-                                    <br>
-                                    <input id="nombre" name="nombre" class="formContacto frmInput" type="text" arequired>
-                                </p>
-                                <p>
-                                    <label class="labels" for="telefono">Telefono</label>
-                                    <br>
-                                    <input id="telefono" name="telefono" class="formContacto frmInput" type="text"
-                                        required>
-                                </p>
-                                <p>
-                                    <label class="labels" for="email">Email</label>
-                                    <br>
-                                    <input id="email" name="email" class="formContacto frmInput" type="email" arequired>
-                                </p>
-                                <p>
-                                    <label class="labels" for="tipoConsulta">Tipo</label>
-                                    <br>
-                                    <select id="tipoConsulta" name="tipoConsulta" class="formContacto frmSelect">
-                                        <option value>--Por favor, elije una opción--</option>
-                                        <option value="Sugerencia">Sugerencia</option>
-                                        <option value="Reclamo">Reclamo</option>
-                                        <option value="Pedidos">Pedidos</option>
-                                    </select>
-                                </p>
-                                <p>
-                                    <label class="labels" for="mensaje">Mensaje</label>
-                                    <br>
-                                    <textarea id="mensaje" name="mensaje" class="formContacto frmTextarea"
-                                        rows="16"></textarea>
-                                </p>
-                                <p>
-                                    <input class="formContacto frmBoton" type="submit" value="ENVIAR" id="submitButton">
-                                </p>
-                            </form>
+                                <fieldset>
+                                    <p>
+                                        <label class="labels" for="nombre">Nombre</label>
+                                        <br>
+                                        <input id="nombre" name="nombre" class="formContacto frmInput" type="text" arequired>
+                                    </p>
+                                    <p>
+                                        <label class="labels" for="telefono">Telefono</label>
+                                        <br>
+                                        <input id="telefono" name="telefono" class="formContacto frmInput" type="text"
+                                            required>
+                                    </p>
+                                    <p>
+                                        <label class="labels" for="email">Email</label>
+                                        <br>
+                                        <input id="email" name="email" class="formContacto frmInput" type="email" arequired>
+                                    </p>
+                                    <p>
+                                        <label class="labels" for="tipoConsulta">Tipo</label>
+                                        <br>
+                                        <select id="tipoConsulta" name="tipoConsulta" class="formContacto frmSelect">
+                                            <option value>--Por favor, elije una opción--</option>
+                                            <option value="Sugerencia">Sugerencia</option>
+                                            <option value="Reclamo">Reclamo</option>
+                                            <option value="Pedidos">Pedidos</option>
+                                        </select>
+                                    </p>
+                                    <p>
+                                        <label class="labels" for="mensaje">Mensaje</label>
+                                        <br>
+                                        <textarea id="mensaje" name="mensaje" class="formContacto frmTextarea"
+                                            rows="14"></textarea>
+                                    </p>
+                                    <div class="medio">
+                                        <p>
+                                            <label class="respuesta">¿ Porque medio preferís que te contactemos ?</label>
+                                            <br>
+                                            <input type="radio" name="medioRespuesta" id="medioTelefono" value="porTelefono"><label for="medioTelefono" class="respuesta">Por Telefono/WhatsApp</label>
+                                            <input type="radio" name="medioRespuesta" id="medioEmail" value="porEmail"><label for="medioEmail" class="respuesta">Por email</label>
+                                        </p>
+                                        <p>
+                                            <label for="recibirPromos" class="respuesta">¿ Queres recibir nuestras promos ?</label>
+                                            <input type="checkbox" name="recibirPromos" id="recibirPromos" checked>
+                                        </p>
+                                    </div>
+                                    <p>
+                                        <input class="formContacto frmBoton" type="submit" value="ENVIAR" id="submitButton">
+                                    </p>
+                            </fieldset>
+                        </form>
                         </div>
                     </div>
                 </section>

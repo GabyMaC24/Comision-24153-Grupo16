@@ -221,10 +221,7 @@ body {
     justify-content: center;
 }
 .containerContactBig{
-
     flex-wrap: wrap;
-    /* justify-content:space-evenly; */
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -257,9 +254,19 @@ body {
     line-height: 1.5em;
     color: #981363;
 }
+fieldset {
+    border: none;
+}
 .labels {
     font-size: 15px;
     color: #787D85;
+}
+.respuesta {
+    font-size: 13px;
+    color: #787D85;
+}
+.medio {
+    text-align: center;
 }
 .formContacto {
     display: flex;
@@ -273,7 +280,7 @@ body {
     font-family: "Montserrat",Helvetica,Arial,Verdana,sans-serif;
 }
 .frmInput, .frmSelect, .frmBoton {
-    height: 35px;
+    height: 30px;
 }
 .frmTextarea {
     resize: none;
