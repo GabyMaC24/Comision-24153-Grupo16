@@ -283,20 +283,20 @@
                             <form id="contactForm" action="">
                                 <fieldset>
                                     <p>
-                                        <label class="labels" for="nombre">Nombre</label>
+                                        <label class="labels" for="nombre">Nombre</label><span class="campoObligatorio">!</span>
                                         <br>
-                                        <input id="nombre" name="nombre" class="formContacto frmInput" type="text" arequired>
+                                        <input id="nombre" name="nombre" class="formContacto frmInput" type="text" required>
                                     </p>
                                     <p>
-                                        <label class="labels" for="telefono">Telefono</label>
+                                        <label class="labels" for="telefono">Telefono</label><span class="campoObligatorio">!</span>
                                         <br>
                                         <input id="telefono" name="telefono" class="formContacto frmInput" type="text"
                                             required>
                                     </p>
                                     <p>
-                                        <label class="labels" for="email">Email</label>
+                                        <label class="labels" for="email">Email</label><span class="campoObligatorio">!</span>
                                         <br>
-                                        <input id="email" name="email" class="formContacto frmInput" type="email" arequired>
+                                        <input id="email" name="email" class="formContacto frmInput" type="email" required>
                                     </p>
                                     <p>
                                         <label class="labels" for="tipoConsulta">Tipo</label>
@@ -309,23 +309,24 @@
                                         </select>
                                     </p>
                                     <p>
-                                        <label class="labels" for="mensaje">Mensaje</label>
+                                        <label class="labels" for="mensaje">Mensaje</label><span class="campoObligatorio">!</span>
                                         <br>
                                         <textarea id="mensaje" name="mensaje" class="formContacto frmTextarea"
-                                            rows="14"></textarea>
+                                            rows="14" required></textarea>
                                     </p>
                                     <div class="medio">
                                         <p>
-                                            <label class="respuesta">¿ Porque medio preferís que te contactemos ?</label>
+                                            <label class="respuesta">¿ Por que medio preferís que te contactemos ?</label>
                                             <br>
                                             <input type="radio" name="medioRespuesta" id="medioTelefono" value="porTelefono"><label for="medioTelefono" class="respuesta">Por Telefono/WhatsApp</label>
-                                            <input type="radio" name="medioRespuesta" id="medioEmail" value="porEmail"><label for="medioEmail" class="respuesta">Por email</label>
+                                            <input type="radio" name="medioRespuesta" id="medioEmail" value="porEmail" checked><label for="medioEmail" class="respuesta">Por email</label>
                                         </p>
                                         <p>
                                             <label for="recibirPromos" class="respuesta">¿ Queres recibir nuestras promos ?</label>
                                             <input type="checkbox" name="recibirPromos" id="recibirPromos" checked>
                                         </p>
                                     </div>
+                                    <span class="campoObligatorio">Estos campos son obligatorios</span>
                                     <p>
                                         <input class="formContacto frmBoton" type="submit" value="ENVIAR" id="submitButton">
                                     </p>
