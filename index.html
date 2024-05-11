@@ -283,24 +283,20 @@
                             <form id="contactForm" action="">
                                 <fieldset>
                                     <p>
-                                        <label class="labels" for="nombre">Nombre</label><span class="campoObligatorio">!</span>
-                                        <br>
-                                        <input id="nombre" name="nombre" class="formContacto frmInput" type="text" required>
+                                        <label class="labels" for="nombre">Nombre</label><span class="campoObligatorio">&times;</span>
+                                        <input id="nombre" name="nombre" class="formContacto frmInput" type="text" >
                                     </p>
                                     <p>
-                                        <label class="labels" for="telefono">Telefono</label><span class="campoObligatorio">!</span>
-                                        <br>
+                                        <label class="labels" for="telefono">Telefono</label><span class="campoObligatorio">&times;</span>
                                         <input id="telefono" name="telefono" class="formContacto frmInput" type="text"
-                                            required>
+                                            >
                                     </p>
                                     <p>
-                                        <label class="labels" for="email">Email</label><span class="campoObligatorio">!</span>
-                                        <br>
-                                        <input id="email" name="email" class="formContacto frmInput" type="email" required>
+                                        <label class="labels" for="email">Email</label><span class="campoObligatorio">&times;</span>
+                                        <input id="email" name="email" class="formContacto frmInput" type="email" >
                                     </p>
                                     <p>
                                         <label class="labels" for="tipoConsulta">Tipo</label>
-                                        <br>
                                         <select id="tipoConsulta" name="tipoConsulta" class="formContacto frmSelect">
                                             <option value>--Por favor, elije una opción--</option>
                                             <option value="Sugerencia">Sugerencia</option>
@@ -309,10 +305,9 @@
                                         </select>
                                     </p>
                                     <p>
-                                        <label class="labels" for="mensaje">Mensaje</label><span class="campoObligatorio">!</span>
-                                        <br>
+                                        <label class="labels" for="mensaje">Mensaje</label><span class="campoObligatorio">&times; (al menos 50 caracteres)</span>
                                         <textarea id="mensaje" name="mensaje" class="formContacto frmTextarea"
-                                            rows="14" required></textarea>
+                                            rows="14" ></textarea>
                                     </p>
                                     <div class="medio">
                                         <p>
