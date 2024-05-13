@@ -4,6 +4,13 @@ let closeButton = document.getElementsByClassName("close-button")[0];
 let submitButton = document.getElementById("submitButton");
 let form = document.getElementById("contactForm");
 
+// closeButton.onclick = function () {
+//     dialogContainer.style.display = "none";
+// }
+closeButton.addEventListener("click", function() {
+    dialogContainer.style.display = "none";
+});
+
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -31,8 +38,7 @@ form.addEventListener("submit", function (event) {
         }
     }
     if (!valid) {
-             submitButton.classList.add("button-container-moved"); //
-
+        submitButton.classList.add("button-container-moved"); //
         for (let i = 0; i < campoOculto.length; i++) {
             //submitButton.classList.add("button-container-moved"); //
             campoOculto[i].classList.add("visible");
@@ -47,25 +53,49 @@ form.addEventListener("submit", function (event) {
         }, 3000);
 
     } else {
-        //alert('envio formulario');
         //form.submit();
-        dialogContainer.style.display = "block";
+        // Mostrar la ventana emergente después de enviar el formulario
+        showDialogContainer(names, message, email, tel);
     }
 
     function validateEmail(email) {
         var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(email);
     }
+
+    function showDialogContainer(name, message, email, tel) {
+        let titleForm = document.getElementById("title-form");
+        let datosRecibidos = document.getElementById("datos-recibidos");
+        let tipoConsulta = document.getElementById("tipoConsulta");
+        let radioButtonMedio = document.getElementsByName("medioRespuesta");
+        let medio;
+        for (let i = 0; i < radioButtonMedio.length; i++) {
+            if(radioButtonMedio[i].checked) {
+                medioElegido = radioButtonMedio[i].value;
+                if(medioElegido=="Email") {
+                    medio = email;
+                } else {
+                    medio = tel;
+                }
+                break;
+            }
+        }
+        if(!tipoConsulta.value) {
+            consulta = "Consulta";
+        } else {
+            consulta = tipoConsulta.value;
+        }
+        let recibirPromos = document.getElementById("recibirPromos");
+        titleForm.textContent = `¡Hola! ${name}`;
+        datosRecibidos.innerHTML = `Gracias por escribirnos, responderemos a tu <strong>${consulta}</strong> a la brevedad. Nos contactaremos a través de tu <strong>${medioElegido}</strong> a <strong>${medio}</strong>`;
+        if(recibirPromos.checked) {
+            datosRecibidos.innerHTML += `<br> Te estaremos enviando nuestras <strong>promos</strong>, estate atento!`;
+        }
+        datosRecibidos.innerHTML += `<br><br><strong>¡Hasta pronto!</strong>`;
+        let mensajeRecibido = document.getElementById("mensaje-recibido");
+        mensajeRecibido.innerHTML = `<i>${message}</i>`;
+        dialogContainer.style.display = "block";
+    }
 });
 
 // Cerrar la ventana de diálogo al hacer clic en el botón de cierre
-closeButton.onclick = function () {
-    dialogContainer.style.display = "none";
-}
-
-// Cerrar la ventana de diálogo al hacer clic fuera de ella
-// window.onclick = function (event) {
-//     if (event.target == dialogContainer) {
-//         dialogContainer.style.display = "none";
-//     }
-// }

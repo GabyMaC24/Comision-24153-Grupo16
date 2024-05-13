@@ -301,7 +301,7 @@
                                             <option value>--Por favor, elije una opción--</option>
                                             <option value="Sugerencia">Sugerencia</option>
                                             <option value="Reclamo">Reclamo</option>
-                                            <option value="Pedidos">Pedidos</option>
+                                            <option value="Pedido">Pedidos</option>
                                         </select>
                                     </p>
                                     <p>
@@ -313,8 +313,8 @@
                                         <p>
                                             <label class="respuesta">¿ Por que medio preferís que te contactemos ?</label>
                                             <br>
-                                            <input type="radio" name="medioRespuesta" id="medioTelefono" value="porTelefono"><label for="medioTelefono" class="respuesta">Por Telefono/WhatsApp</label>
-                                            <input type="radio" name="medioRespuesta" id="medioEmail" value="porEmail" checked><label for="medioEmail" class="respuesta">Por email</label>
+                                            <input type="radio" name="medioRespuesta" id="medioTelefono" value="Telefono/WhatsApp"><label for="medioTelefono" class="respuesta">Por Telefono/WhatsApp</label>
+                                            <input type="radio" name="medioRespuesta" id="medioEmail" value="Email" checked><label for="medioEmail" class="respuesta">Por email</label>
                                         </p>
                                         <p>
                                             <label for="recibirPromos" class="respuesta">¿ Queres recibir nuestras promos ?</label>
@@ -335,9 +335,12 @@
             <!-- Ventana de diálogo -->
             <div id="dialogContainer" class="dialog-container">
                 <div class="dialog-content">
-                <span class="close-button">&times;</span>
-                <h2>¡Hola!</h2>
-                <p>Este es un ejemplo de una ventana de diálogo con un efecto de caída.</p>
+                    <!-- <span class="close-button">&times;</span> -->
+                    <span class="close-button">x</span>
+                    <h2 id="title-form">¡Hola! USUARIO</h2>
+                    <p id="datos-recibidos"></p>
+                    <span> [ Mensaje recibido ]</span>
+                    <p id="mensaje-recibido"></p>
                 </div>
             </div>
 
