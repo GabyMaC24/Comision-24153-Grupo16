@@ -33,11 +33,22 @@
         </div>
 
         <!-- NavBar -->
-        <div class="navbar">
+        <div class="navbar menu-desktop">
             <a href="#Promos">Promos</a>
             <a href="#Sabores">Sabores</a>
             <a href="#Produccion">Nuestra Producción</a>
             <a href="#Contacto">Contacto</a>
+        </div>
+
+        <!-- menu para pantalla chica -->
+        <div class="navbar menu-mobile">
+            <button class="btn-menu">&#9776;</button>
+            <ul class="menu-items">
+              <li><a href="#Promos">Promos</a></li>
+              <li><a href="#Sabores">Sabores</a></li>
+              <li><a href="#Produccion">Nuestra Producción</a></li>
+              <li><a href="#Contacto">Contacto</a></li>
+            </ul>
         </div>
 
         <!-- Flex Content -->
@@ -280,7 +291,7 @@
                             <img src="img/imagen-contacto.jpg" alt="imagen de contacto" width="100%">
                         </div>
                         <div class="containerContacto">
-                            <form id="contactForm" action="">
+                            <form id="contactForm" action="#">
                                 <fieldset>
                                     <p>
                                         <label class="labels" for="nombre">Nombre</label><span class="campoObligatorio">&times;</span>

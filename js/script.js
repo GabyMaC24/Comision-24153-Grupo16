@@ -4,11 +4,9 @@ let closeButton = document.getElementsByClassName("close-button")[0];
 let submitButton = document.getElementById("submitButton");
 let form = document.getElementById("contactForm");
 
-// closeButton.onclick = function () {
-//     dialogContainer.style.display = "none";
-// }
 closeButton.addEventListener("click", function() {
     dialogContainer.style.display = "none";
+    form.submit();
 });
 
 form.addEventListener("submit", function (event) {
@@ -53,7 +51,6 @@ form.addEventListener("submit", function (event) {
         }, 3000);
 
     } else {
-        //form.submit();
         // Mostrar la ventana emergente después de enviar el formulario
         showDialogContainer(names, message, email, tel);
     }
@@ -98,4 +95,10 @@ form.addEventListener("submit", function (event) {
     }
 });
 
-// Cerrar la ventana de diálogo al hacer clic en el botón de cierre
+// funcion para el menu para pantallas
+const btnMenu = document.querySelector('.btn-menu');
+const menuItems = document.querySelector('.menu-items');
+
+btnMenu.addEventListener('click', () => {
+  menuItems.style.display = menuItems.style.display === 'none' ? 'block' : 'none';
+});
