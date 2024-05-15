@@ -98,7 +98,21 @@ form.addEventListener("submit", function (event) {
 // funcion para el menu para pantallas
 const btnMenu = document.querySelector('.btn-menu');
 const menuItems = document.querySelector('.menu-items');
+const menuItemsClick = document.querySelectorAll('.menu-items a');
 
 btnMenu.addEventListener('click', () => {
-  menuItems.style.display = menuItems.style.display === 'none' ? 'block' : 'none';
+    if(btnMenu.textContent=="☰") {
+        btnMenu.textContent = "✕";
+        menuItems.style.display = 'block';
+    } else {
+        btnMenu.textContent = "☰";
+        menuItems.style.display = 'none';
+    }
+});
+
+menuItemsClick.forEach(item => {
+    item.addEventListener('click', () => {
+        btnMenu.textContent = "☰";
+        menuItems.style.display = 'none';
+    });
 });
