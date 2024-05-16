@@ -116,3 +116,8 @@ menuItemsClick.forEach(item => {
         menuItems.style.display = 'none';
     });
 });
+
+// function cambiarImagen(imagen) {
+//     //let imagenCambio = document.getElementById("fa");
+//     document.getElementById('fa').src = imagen;
+// }
