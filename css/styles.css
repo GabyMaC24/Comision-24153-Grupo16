@@ -28,14 +28,14 @@ body {
     align-items: center;
     background-color: #FFDFD3;
     border-radius: 10px 10px 0 0 ;
-    /* border: solid #ffffff; */
+    border: solid #ffffff; 
     border-width: 0.2rem 0.2rem 0rem 0.2rem;
 }
 .topHeader img {
     height: auto;
 }
 
-nav {
+.nav {
     margin-right: 20px;
 }
 .navRedesHeader {
@@ -184,25 +184,36 @@ nav {
 /* Promos*/
 
 .ttl_promos{
-    font-size: 16px;
+    font-size: 1.5em;
     text-align: center;
     color:#ffffff;
     font-weight: bold;
     background-color: #957dad;
-    height: 2rem;   
+    height: 3rem;   
     align-content: center;
 }
 
-/* PRODUCCIÓN*/
-.produccionContainerFlex{
+/* SUCURSALES*/
+.branchContainerFlex{
     background-color: rgba(155, 173, 173, 0.445);
     border-radius: 0.5rem;
-}
-.produccion_flexBx{
-    text-align: left;
     padding: 2rem;
 }
-
+.branchFlexBx{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+    align-items: center;
+}
+.map{
+    border: dotted #ffffff;
+    border-width: 0.3rem
+}
+.photoBranch{
+    border: solid #000000;
+    border-width: 0.3rem
+}
 
 /* CONTACTO*/
 .ttlContacto{
@@ -378,17 +389,23 @@ fieldset > .campoObligatorio {
 
 /* Footer */
 .footer {
-    margin-top: 5rem;;  
+    margin-top: 5rem;
     background-color: #FFDFD3;
     padding: 5px 5px 5px 20px ;
     border-radius: 0 0 10px 10px;
     border: solid #ffffff;
     border-width: 0.3rem;
-    height: 15rem;
+    height: 5rem;
 }
 .footer >p {
     color: #423c3c;
     font-size: small;
+}
+
+.flex-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
 }
 
 @media screen and (max-width: 1300px) {
