@@ -45,9 +45,7 @@ nav {
     display: inline-block;
     margin-left: 10px;
 }
-.navRedesHeader li a img {
-    /* width: 44px; */
-}
+
 .navRedesHeader li a img:hover {
     opacity: .6;
 }
