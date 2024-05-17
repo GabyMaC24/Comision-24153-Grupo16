@@ -106,7 +106,38 @@ body {
   border-width: 0rem 0.2rem 0.2rem 0.2rem; 
 }
 .login{
-    background-color: #f1f1f1;
+    background-color: none;
+    display: block;
+    padding: 2px;
+
+}
+
+.log_usuario {
+    width: 100%;
+    padding: 5px;
+    text-align: left;
+    color: #615c5c;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.log_pass {
+    width: 100%;
+    padding: 5px;
+    text-align: left;
+    color: #615c5c;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.log_boton {
+    margin-top: 5px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 60px;
 }
 
 /* Main column */
@@ -251,9 +282,308 @@ body {
     font-size: small;
 }
 
-/* Responsive 700px wide */
-@media screen and (max-width: 700px) {
-  .row, .navbar, .flavorsFlexBx {   
+/* Responsive a partir de acá */
+/* Modo Tablet */
+@media all and (min-width: 600px) and (max-width: 1023px) {
+    .row, .navbar, .flavorsFlexBx {   
     flex-direction: column;
   }
+  /* TopHeader/logo */
+    .topHeader{
+        border-radius: 10px 10px 0 0 ;
+        border-width: 0.2rem 0.2rem 0rem 0.2rem;
+    }
+
+    /*designBar*/
+    .designBar{
+        width:100%;
+        height: 2rem;
+    }
+
+    /* Header/banner */
+    .header {
+        height: 500px;
+        margin-top: 0em;
+        position: relative;
+    }
+    .txtHeader{
+        font-size: 2em;
+        padding: 0.5em;
+        position: absolute;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .ttl_homeHeader{
+        text-align: center;
+        width: 30em;
+        top:  0.2em;
+        left: 0.1em;
+        padding: 5px 40px 5px 40px;
+    }
+
+    /* navBar links */
+    .navbar a {
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+    }
+    /* hover */
+    .navbar a:hover {
+        background-color: #FFDFD3;
+    }
+
+    /* Column container */
+    .row {  
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    /* Aside/right column */
+    .side {
+    flex: 30%;
+    padding: 20px;
+    border-width: 0rem 0.2rem 0.2rem 0.2rem; 
+    }
+
+    .login{
+        display: block;
+        padding: 2px;
+    }
+
+    .log_usuario {
+        width: 100%;
+        padding: 5px;
+        text-align: left;
+    }
+
+    .log_pass {
+        width: 100%;
+        padding: 5px;
+        text-align: left;
+    }
+
+    .log_boton {
+        margin-top: 5px;
+        padding: 2px;
+        text-align: center;
+        width: 60px;
+    }
+
+    /* Main column */
+    .main {
+    flex: 70%;
+    padding: 20px;
+    }
+    .fakeimg {
+    width: 100%;
+    padding: 20px;
+    }
+
+    /*Flavors*/
+    .flavorTtlHeader{
+        font-size: 2em;
+        padding: 0.5em;
+        position: absolute;
+        margin-top: 2em;
+    }
+    .flavorsFlexBx{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 2rem;
+        justify-content: space-evenly;
+    }
+    .flavorsFlexBx >div{
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    .flavorTtl{
+        text-align: left;
+        font-size: 0.9rem;
+    }
+    .flavorDescription{
+        text-align: left;
+        font-size: 0.85rem;
+        display: block;
+        padding-bottom: 1rem;
+    }
+
+    /* Promos*/
+    .containerFlexPromos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+    .promos_flexBx{
+        padding: 30px;
+    }
+    .ttl_promos{
+        font-size: 15px;
+        height: 2rem;   
+    }
+    .promos_flexBx >button{
+        border: none;
+        width: 200px;
+        height: 30px;
+        letter-spacing: 2px;
+        font-size: 0.8em;
+        border-radius: 0.5rem;
+
+    }
+
+    
+    .promoImg{
+        border-width: 0.2rem 0.2rem 0.2rem 0.2rem; 
+    }
+
+    /* PRODUCCIÓN*/
+    .produccionContainerFlex{
+        border-radius: 0.5rem;
+    }
+    .produccion_flexBx{
+        text-align: left;
+        padding: 2rem;
+    }
+
+
+    /* CONTACTO*/
+    .ttlContacto{
+        text-align: center;
+    }
+    .containerContactBig{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .containerContact{
+        width: 70%;
+        height: 500px;
+    }
+
+    /* Footer */
+    .footer {
+        margin-top: 5rem;;  
+        padding: 5px 5px 5px 20px ;
+        border-radius: 0 0 10px 10px;
+        border-width: 0.3rem;
+        height: 5rem;
+    }
+    
 }
+
+
+ /*Fin Tablet*/
+
+@media all and (max-width: 599px) {
+    .row, .navbar, .flavorsFlexBx {   
+      flex-direction: column;
+    }
+    .topHeader{
+        border-radius: 10px 10px 0 0 ;
+        border-width: 0.2rem 0.2rem 0rem 0.2rem;
+    }
+
+    /* Header/banner */
+    .header {
+        height: 400px;
+        margin-top: 0em;
+        position: relative;
+    }
+    .txtHeader{
+        font-size: 2em;
+        padding: 0.5em;
+        position: absolute;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    /* Column container */
+    .row {  
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    /* Aside/right column */
+    .side {
+    flex: 30%;
+    padding: 20px;
+    border-width: 0rem 0.2rem 0.2rem 0.2rem; 
+    }
+
+
+    /*Flavors*/
+    .flavorTtlHeader{
+        font-size: 2em;
+        padding: 0.5em;
+        position: absolute;
+        margin-top: 2em;
+    }
+    .flavorsFlexBx{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 2rem;
+        justify-content: space-evenly;
+    }
+    .flavorsFlexBx >div{
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    .flavorTtl{
+        text-align: left;
+        font-size: 0.9rem;
+    }
+    .flavorDescription{
+        text-align: left;
+        font-size: 0.85rem;
+        display: block;
+        padding-bottom: 1rem;
+    }
+
+    /* Promos*/
+    .containerFlexPromos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+    .promos_flexBx{
+        padding: 30px;
+    }
+    .ttl_promos{
+        font-size: 15px;
+        height: 2rem;   
+    }
+    .promos_flexBx >button{
+        border: none;
+        width: 200px;
+        height: 30px;
+        letter-spacing: 2px;
+        font-size: 0.8em;
+        border-radius: 0.5rem;
+    }  
+    .promoImg{
+        border-width: 0.2rem 0.2rem 0.2rem 0.2rem; 
+    }
+
+    /* CONTACTO*/
+    .ttlContacto{
+        text-align: center;
+    }
+    .containerContactBig{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        margin-top: 5rem;;  
+        padding: 5px 5px 5px 20px ;
+        border-radius: 0 0 10px 10px;
+        border-width: 0.3rem;
+        height: 5rem;
+    }
+    
+}
+
