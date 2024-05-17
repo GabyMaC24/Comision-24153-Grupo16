@@ -22,17 +22,16 @@
         <!-- Top -->
         <div class="topHeader">
             <header id="Home">
-                <img src="img/logo.png" alt="">
+                <img src="img/logo.png" alt="logo">
             </header>
                 <nav class="navHeader">
                     <ul class="navRedesHeader">
-                        <li><a href="https://www.facebook.com/"><img id="fa" src="img/facebook.png" alt="imagen facebook" onmouseover="cambiarImagen('ffacebook.png')"></a></li>
-                        <li><a href="https://www.facebook.com/"><img src="img/instagram.png" alt="imagen instagram" id="in"></a></li>
-                        <li><a href="https://www.facebook.com/"><img src="img/youtube.png" alt="imagen youtube" id="yo"></a></li>
-                        <li><a href="https://www.facebook.com/"><img src="img/whatsapp.png" alt="imagen whatsapp" id="wh"></a></li>
+                        <li><a href="#"><img id="red_facebook" src="img/ffacebook.png" alt="imagen facebook" onmouseover="cambiarImagen('red_facebook','facebook.png')" onmouseout="restaurarImagen('red_facebook','ffacebook.png')"></a></li>
+                        <li><a href="#"><img id="red_instagram" src="img/iinstagram.png" alt="imagen instagram" onmouseover="cambiarImagen('red_instagram','instagram.png')" onmouseout="restaurarImagen('red_instagram','iinstagram.png')"></a></li>
+                        <li><a href="#"><img id="red_youtube" src="img/yyoutube.png" alt="imagen youtube" onmouseover="cambiarImagen('red_youtube','youtube.png')" onmouseout="restaurarImagen('red_youtube','yyoutube.png')"></a></li>
+                        <li><a href="#"><img id="red_whatsapp" src="img/wwhatsapp.png" alt="imagen whatsapp" onmouseover="cambiarImagen('red_whatsapp','whatsapp.png')" onmouseout="restaurarImagen('red_whatsapp','wwhatsapp.png')"></a></li>
                     </ul>
                 </nav>
-            <!-- </header> -->
         </div>
 
         <div class="designBar"></div>
@@ -306,16 +305,15 @@
                                 <fieldset>
                                     <p>
                                         <label class="labels" for="nombre">Nombre</label><span class="campoObligatorio">&times;</span>
-                                        <input id="nombre" name="nombre" class="formContacto frmInput" type="text" >
+                                        <input id="nombre" name="nombre" class="formContacto frmInput" type="text">
                                     </p>
                                     <p>
                                         <label class="labels" for="telefono">Telefono</label><span class="campoObligatorio">&times;</span>
-                                        <input id="telefono" name="telefono" class="formContacto frmInput" type="text"
-                                            >
+                                        <input id="telefono" name="telefono" class="formContacto frmInput" type="text">
                                     </p>
                                     <p>
                                         <label class="labels" for="email">Email</label><span class="campoObligatorio">&times;</span>
-                                        <input id="email" name="email" class="formContacto frmInput" type="email" >
+                                        <input id="email" name="email" class="formContacto frmInput" type="email">
                                     </p>
                                     <p>
                                         <label class="labels" for="tipoConsulta">Tipo</label>
@@ -354,10 +352,8 @@
                 </section>
             </div>
             <!-- Aca pongo el codigo para la ventana emergente de respuesta al formulario de contacto -->
-            <!-- Ventana de diálogo -->
             <div id="dialogContainer" class="dialog-container">
                 <div class="dialog-content">
-                    <!-- <span class="close-button">&times;</span> -->
                     <span class="close-button">x</span>
                     <h2 id="title-form">¡Hola! USUARIO</h2>
                     <p id="datos-recibidos"></p>
@@ -414,9 +410,27 @@
 
         <!-- Footer -->
         <div class="footer">
-            <p>Footer - Se puede colocar direccion. Tel. iconos de redes sociales</p>
+            <div class="footerLogo">
+                <img src="img/logo.png" alt="imagen logo">
+                <!-- <p>&copy; 2024 Galipolli</p> -->
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="#Promos">Promos</a></li>
+                    <li><a href="#Sabores">Sabores</a></li>
+                    <li><a href="#Produccion">Nuestra Producción</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footerRedes">
+                <ul>
+                    <li><a href="#"><img id="red_facebook_footer" src="img/ffacebook.png" alt="imagen facebook" onmouseover="cambiarImagen('red_facebook_footer','facebook.png')" onmouseout="restaurarImagen('red_facebook_footer','ffacebook.png')"></a></li>
+                    <li><a href="#"><img id="red_instagram_footer" src="img/iinstagram.png" alt="imagen instagram" onmouseover="cambiarImagen('red_instagram_footer','instagram.png')" onmouseout="restaurarImagen('red_instagram_footer','iinstagram.png')"></a></li>
+                    <li><a href="#"><img id="red_youtube_footer" src="img/yyoutube.png" alt="imagen youtube" onmouseover="cambiarImagen('red_youtube_footer','youtube.png')" onmouseout="restaurarImagen('red_youtube_footer','yyoutube.png')"></a></li>
+                    <li><a href="#"><img id="red_whatsapp_footer" src="img/wwhatsapp.png" alt="imagen whatsapp" onmouseover="cambiarImagen('red_whatsapp_footer','whatsapp.png')" onmouseout="restaurarImagen('red_whatsapp_footer','wwhatsapp.png')"></a></li>
+                </ul>
+            </div>
         </div>
-
     </div>
     <script src="js/script.js"></script>
 </body>

@@ -46,13 +46,6 @@ nav {
     display: inline-block;
     margin-left: 10px;
 }
-.navRedesHeader li a img {
-    /* width: 44px; */
-}
-.navRedesHeader li a img:hover {
-    opacity: .6;
-}
-
 
 /*designBar*/
 .designBar{
@@ -344,12 +337,10 @@ fieldset > .campoObligatorio {
 }
 
 .button-container-moved {
-    /* transition: transform 0.5s ease-in-out; */
     transform: translateY(20px);
 }
 
-/* Estilo y animacion para ventana emergente */
-/* Estilos para la ventana de diálogo */
+/* VENTANA EMERGENTE POST FORMULARIO */
 .dialog-container {
     display: none;
     position: fixed;
@@ -360,10 +351,10 @@ fieldset > .campoObligatorio {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
-    animation: fadeIn 0.5s;
-  }
-  
-  .dialog-content {
+    animation: fadeIn 1.2s;
+}
+
+.dialog-content {
     position: relative;
     background-color: #fefefe;
     margin: 15% auto;
@@ -372,12 +363,12 @@ fieldset > .campoObligatorio {
     min-width: 250px;
     width: 30%;
     overflow-wrap: break-word;
-    animation: slideDown 0.5s;
+    animation: slideDown 1s;
     border: 5px rgb(112, 189, 247) solid;
     border-radius: 10px;
-  }
+}
   
-  .close-button {
+.close-button {
     position: absolute;
     background-color: #000;
     border: none;
@@ -388,7 +379,6 @@ fieldset > .campoObligatorio {
     padding: 5px 12px;
     font-size: 30px;
     font-weight: bold;
-    
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
@@ -396,31 +386,73 @@ fieldset > .campoObligatorio {
     color: rgb(251, 117, 7);
     float: right;
 }
-  
-  /* Animaciones */
-  @keyframes fadeIn {
+/* ANIMACION DE VENTANA EMERGENTE */
+@keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
-  }
-  
-  @keyframes slideDown {
+}
+
+@keyframes slideDown {
     from {top: -300px;}
     to {top: 0;}
-  }
+}
 
 /* Footer */
 .footer {
+    display: flex;
+    flex-direction: row;
     margin-top: 5rem;;  
     background-color: #FFDFD3;
-    padding: 5px 5px 5px 20px ;
+    padding: 5px 5px 5px 5px;
     border-radius: 0 0 10px 10px;
     border: solid #ffffff;
     border-width: 0.3rem;
-    height: 15rem;
+    height: 200px;
+    font-family: montserrat;
+    align-items: center;
+    justify-content:space-evenly;
+    justify-items: center;
 }
-.footer >p {
-    color: #423c3c;
-    font-size: small;
+
+.footerNav li {
+    display: inline;
+    list-style: none;
+    padding: 10px;
+}
+.footerNav a {
+    color: #5c0840;
+    text-decoration: none;
+    font-weight: 500;
+}
+.footerNav a:hover {
+    color: #a3a0a0;
+    /* font-weight: 500; */
+}
+
+.footerRedes li {
+    display: inline-block;
+    list-style: none;
+    margin-right: auto;
+    padding: 0 10px 0 10px;
+}
+
+@media screen and (max-width: 929px) {
+    .footerNav li a {
+        display: block;
+    }
+    .footerRedes li {
+        display: block;
+    }
+}
+@media screen and (max-width: 760px) {
+    .footer {
+        flex-direction: column;
+        height: max-content;
+        justify-content: center;
+    }
+    .footerRedes li {
+        display: inline;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -434,7 +466,7 @@ fieldset > .campoObligatorio {
 }
 
   /* Responsive 700px wide */
-  @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .row, .navbar, .flavorsFlexBx, .containerContactBig {
       flex-direction: column;
     }
@@ -458,19 +490,25 @@ fieldset > .campoObligatorio {
       text-decoration: none;
     }
     .menu-mobile {
-      display: none;
+        display: none;
     }
-  }
-  
+}
+
+  /* Oculto logos de redes */
+@media (max-width: 537px) {
+    .navHeader {
+        display: none;
+    }
+}
   /* media queries para el menu */
   /* Estilos para móviles */
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
+
     .menu-desktop {
-      display: none;
+        display: none;
     }
     .menu-mobile {
       display: block;
-      /* justify-content: end; */
       text-align: end;
     }
     .btn-menu {
@@ -499,8 +537,6 @@ fieldset > .campoObligatorio {
       text-decoration: none;
     }
     .menu-items a:hover {
-        /* padding: 5px; */
-        background-color: #0c284a;
+      background-color: #0c284a;
     }
-
 }

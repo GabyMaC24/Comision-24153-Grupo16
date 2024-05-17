@@ -117,7 +117,9 @@ menuItemsClick.forEach(item => {
     });
 });
 
-// function cambiarImagen(imagen) {
-//     //let imagenCambio = document.getElementById("fa");
-//     document.getElementById('fa').src = imagen;
-// }
+function cambiarImagen(id_red,imagen) {
+    document.getElementById(id_red).src = 'img/'+imagen;
+}
+function restaurarImagen(id_red, imagen) {
+    document.getElementById(id_red).src = 'img/'+imagen;
+}
