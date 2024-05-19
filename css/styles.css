@@ -159,7 +159,7 @@
   .flavorsFlexBx{
       display: flex;
       flex-wrap: nowrap;
-      margin-top: 2rem;
+      /*margin-top: 2rem;*/
       justify-content: space-evenly;
       background: url(../img/flavorsBackground.png); 
   }
@@ -175,82 +175,66 @@
       color: #4d2813;
   }
   .flavorDescription{
-      text-align: left;
-      font-size: 0.9rem;
-      color: #000000;
-      display: block;
-      padding-bottom: 1rem;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #000000;
+    display: block;
+    padding-bottom: 1rem;
   }
   
   /* Promos*/
   .containerFlexPromos{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content:space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
   }
   .promos_flexBx{
-      padding: 30px;
+    padding: 30px;
   }
   .ttl_promos{
-      font-size: 1.5em;
-      text-align: center;
-      color:#ffffff;
-      font-weight: bold;
-      background-color: #957dad;
-      height: 3rem;   
-      align-content: center;
-  }
-  .promos_flexBx >button{
-      border: none;
-      width: 200px;
-      height: 30px;
-      background-color:#7c0a56;
-      color: aliceblue;
-      letter-spacing: 2px;
-      font-size: 0.8em;
-      border-radius: 0.5rem;
-      font-weight: bolder;
-      cursor:pointer;
-  }
-  .promos_flexBx >button:hover {
-      transition-duration: 0.4s;
-      background-color: #d291bc;
-      color: #7c0a56;
-  }
-  .promoImg{
-      border: solid #ffffff;
-      border-width: 0.2rem 0.2rem 0.2rem 0.2rem; 
+    font-size: 1.5em;
+    text-align: center;
+    color:#ffffff;
+    font-weight: bold;
+    background-color: #957dad;
+    height: 3rem;   
+    align-content: center;
   }
   
   /* SUCURSALES*/
   .branchContainerFlex{
-      background-color: rgba(155, 173, 173, 0.445);
-      border-radius: 0.5rem;
-      padding: 2rem;
+    background-color: rgba(155, 173, 173, 0.445);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-top: 2rem;
   }
   .branchFlexBx{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      text-align: left;
-      align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+    align-items: center;
+  }
+  .branchFlexBx >div{
+    margin: 0.5rem;
+    padding: 0.5rem;
   }
   .map{
-      border: dotted #ffffff;
-      border-width: 0.3rem
+    border: dotted #ffffff;
+    border-width: 0.3rem
   }
   .photoBranch{
-      border: solid #000000;
-      border-width: 0.3rem
+    border: solid #000000;
+    border-width: 0.3rem
   }
   
   /* CONTACTO*/
   .ttlContacto{
-      color:#434343;
-      font-size: 4em;
-      font-family: "Montserrat",Helvetica,Arial,Verdana,sans-serif;
-      display: flex;
-      justify-content: center;
+    color:#434343;
+    font-size: 4em;
+    font-family: "Montserrat",Helvetica,Arial,Verdana,sans-serif;
+    display: flex;
+    justify-content: center;
   }
   .containerContactBig{
       flex-wrap: wrap;
