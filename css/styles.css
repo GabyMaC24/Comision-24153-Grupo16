@@ -13,7 +13,9 @@
   .gapSection{
       margin-top: 5rem;
   }
-  
+  .gapItems{
+    padding-top: 2em;
+  }
   .centerAll{
       width: 80%;
       margin:auto;
@@ -34,7 +36,6 @@
   .topHeader img {
       height: auto;
   }
-  
   nav {
       margin-right: 20px;
   }
@@ -159,7 +160,7 @@
   .flavorsFlexBx{
       display: flex;
       flex-wrap: nowrap;
-      margin-top: 2rem;
+      /*margin-top: 2rem;*/
       justify-content: space-evenly;
       background: url(../img/flavorsBackground.png); 
   }
@@ -175,82 +176,83 @@
       color: #4d2813;
   }
   .flavorDescription{
-      text-align: left;
-      font-size: 0.9rem;
-      color: #000000;
-      display: block;
-      padding-bottom: 1rem;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #000000;
+    display: block;
+    padding-bottom: 1rem;
   }
   
   /* Promos*/
   .containerFlexPromos{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content:space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
   }
   .promos_flexBx{
-      padding: 30px;
+    padding: 30px;
   }
   .ttl_promos{
-      font-size: 1.5em;
-      text-align: center;
-      color:#ffffff;
-      font-weight: bold;
-      background-color: #957dad;
-      height: 3rem;   
-      align-content: center;
-  }
-  .promos_flexBx >button{
-      border: none;
-      width: 200px;
-      height: 30px;
-      background-color:#7c0a56;
-      color: aliceblue;
-      letter-spacing: 2px;
-      font-size: 0.8em;
-      border-radius: 0.5rem;
-      font-weight: bolder;
-      cursor:pointer;
-  }
-  .promos_flexBx >button:hover {
-      transition-duration: 0.4s;
-      background-color: #d291bc;
-      color: #7c0a56;
-  }
-  .promoImg{
-      border: solid #ffffff;
-      border-width: 0.2rem 0.2rem 0.2rem 0.2rem; 
+    font-size: 1.5em;
+    text-align: center;
+    color:#ffffff;
+    font-weight: bold;
+    background-color: #957dad;
+    height: 3rem;   
+    align-content: center;
   }
   
   /* SUCURSALES*/
   .branchContainerFlex{
-      background-color: rgba(155, 173, 173, 0.445);
-      border-radius: 0.5rem;
-      padding: 2rem;
+    background-color: rgba(155, 173, 173, 0.445);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 1rem;
+    margin-top: 2rem;
+
+    /*border: solid #000000;
+    border-width: 0.3rem;*/ 
   }
-  .branchFlexBx{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      text-align: left;
-      align-items: center;
+  .branchFlexBxItem{
+    flex-basis: 20em;
+    align-content: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    /*border: solid #000000;
+    border-width: 0.3rem;*/
   }
+  .branchTitle{
+    width: 100%;
+    padding-bottom: 1.5em;
+    padding-top: 2em;
+  }
+  .branchFlexBxItem >img{
+    border: solid #000000;
+    border-width: 0.3rem
+  }
+  .branchFlexBxItem >iframe{
+    border: dotted #ffffff;
+    border-width: 0.3rem
+  }
+
   .map{
-      border: dotted #ffffff;
-      border-width: 0.3rem
+    border: dotted #ffffff;
+    border-width: 0.3rem
   }
   .photoBranch{
-      border: solid #000000;
-      border-width: 0.3rem
+    border: solid #000000;
+    border-width: 0.3rem
   }
   
   /* CONTACTO*/
   .ttlContacto{
-      color:#434343;
-      font-size: 4em;
-      font-family: "Montserrat",Helvetica,Arial,Verdana,sans-serif;
-      display: flex;
-      justify-content: center;
+    color:#434343;
+    font-size: 4em;
+    font-family: "Montserrat",Helvetica,Arial,Verdana,sans-serif;
+    display: flex;
+    justify-content: center;
   }
   .containerContactBig{
       flex-wrap: wrap;
@@ -262,7 +264,6 @@
       border-width: 0.3rem 0.3rem 0.3rem 0.3rem;
       border-radius: 20px;
   }
-  
   .containerContacto {
       width: 50%;
       height: max-content;
@@ -368,7 +369,6 @@
       background-color: rgba(0, 0, 0, 0.4);
       animation: fadeIn 1.2s;
   }
-  
   .dialog-content {
       position: relative;
       background-color: #fefefe;
@@ -382,7 +382,6 @@
       border: 5px rgb(112, 189, 247) solid;
       border-radius: 10px;
   }
-    
   .close-button {
       position: absolute;
       background-color: #000;
@@ -484,7 +483,7 @@
   
     /* Responsive 700px wide */
   @media screen and (max-width: 700px) {
-      .row, .navbar, .flavorsFlexBx, .containerContactBig {
+      .row, .navbar, .flavorsFlexBx, .branchContainerFlex, .containerContactBig {
         flex-direction: column;
       }
       .containerContacto {
