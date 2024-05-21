@@ -4,6 +4,14 @@ let closeButton = document.getElementsByClassName("close-button")[0];
 let submitButton = document.getElementById("submitButton");
 let form = document.getElementById("contactForm");
 
+const focusLinks = document.querySelectorAll('.loginIngresar');
+
+focusLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        document.getElementById('username').focus(); // Enfoca el input
+    });
+});
 closeButton.addEventListener("click", function() {
     dialogContainer.style.display = "none";
     form.submit();
