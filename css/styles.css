@@ -13,6 +13,10 @@
   .gapSection{
       margin-top: 5rem;
   }
+  .gapEspacio{
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
   
   .centerAll{
       width: 80%;
@@ -59,14 +63,19 @@
       border: solid #ffffff;
       border-width: 0.2rem 0.2rem 0rem 0.2rem;
   }
-  .scrolling-textContainer{
+  .scrollingContainer{
+    overflow :hidden;
     width: 100%;
-    align-content: center;
-    overflow: hidden;
+    display:inline-block;
+    white-space: nowrap;
+  }
+  .scrollingContainer >div{
+    width: 566px;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: move 30s infinite linear; 
   }
   .scrolling-text {
-    animation: scrolling 30s linear infinite;
-    white-space: nowrap;
     margin-top: 0.1em;  
     color: #51336e;
   }
@@ -81,14 +90,25 @@
   .scrolling-text > a{
     text-decoration: none;
   }
-    /*marquee con css*/
+  /*----------------------------------*/
 
-    @keyframes scrolling{
-      0% {
-        transform: translateX(100vw);
+  @keyframes move {
+    from {
+      transform: translateX(300%);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
+
+  /*---------------------------------------*/
+    /*marquee con css*/
+    @keyframes scrolling {
+      from {
+        transform: translateX(300%);
       }
-      100% {
-        transform: translateX(-100%);
+      to {
+        transform: translateX(-200%);
       }
     }
 
