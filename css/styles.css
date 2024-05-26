@@ -73,7 +73,7 @@
     width: 566px;
     display: flex;
     flex-wrap: nowrap;
-    animation: move 30s infinite linear; 
+    animation: moveText 30s infinite linear; 
   }
   .scrolling-text {
     margin-top: 0.1em;  
@@ -92,9 +92,9 @@
   }
   /*----------------------------------*/
 
-  @keyframes move {
+  @keyframes moveText {
     from {
-      transform: translateX(300%);
+      transform: translateX(280%);
     }
     to {
       transform: translateX(-200%);
@@ -585,6 +585,15 @@
       .containerContactBig {
         flex-direction: column;
       }
+
+      @keyframes moveText {
+        from {
+          transform: translateX(150%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
   }
   
     /* Responsive 700px wide */
@@ -594,6 +603,25 @@
       }
       .containerContacto {
           width: 100%;
+      }
+
+      @keyframes moveText {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+  }
+  @media screen and (max-width: 380px) {
+      @keyframes moveText {
+        from {
+          transform: translateX(60%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
       }
   }
   
