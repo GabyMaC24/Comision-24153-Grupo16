@@ -360,6 +360,9 @@
       font-family: "Montserrat",Helvetica,Arial,Verdana,sans-serif;
       color:#7e1d1d;
   }
+  .containerContacto >img{
+    width: 100%;
+  }
   .contactoTitulo {
       display: flex;
       font-size: clamp(2em, 5vw, 3rem);
