@@ -66,31 +66,27 @@
       border: solid #ffffff;
       border-width: 0.2rem 0.2rem 0rem 0.2rem;
   }
-  .scrollingContainer{
-    overflow :hidden;
-    width: 100%;
-    display:inline-block;
-    white-space: nowrap;
-  }
-  .scrollingContainer >div{
-    width: 566px;
-    display: flex;
-    flex-wrap: nowrap;
-    animation: moveText 30s infinite linear; 
-  }
-  .scrolling-text {
-    margin-top: 0.1em;  
-    color: #51336e;
-  }
-  .btnScrolling-text{
+/* nuevo prueba */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee-text {
+  display: inline-block;
+  margin-top: 0.1em;  
+  color: #51336e;
+  text-indent:5%;
+}
+/* fin nuevo prueba */
+
+  .btnMarquee-text{
     font-size: 0.8em ;
     letter-spacing: 0.1em;
     color: #ffffff;
     background-color: #7a947c;
     padding: 0.3em 0.8em 0.3em 0.8em;
     border-radius: 0.3em;
-  }
-  .scrolling-text > a{
     text-decoration: none;
   }
   /*----------------------------------*/
