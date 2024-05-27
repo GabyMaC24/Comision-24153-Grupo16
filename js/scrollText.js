@@ -10,5 +10,5 @@ $(document).ready(function(){
       }
     };
     
-    marquee.data('interval', setInterval(marquee.marquee, 60 / 60));
+    marquee.data('interval', setInterval(marquee.marquee, 500 / 60));
   });
