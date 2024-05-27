@@ -91,26 +91,6 @@
   }
   /*----------------------------------*/
 
-  @keyframes moveText {
-    from {
-      transform: translateX(280%);
-    }
-    to {
-      transform: translateX(-200%);
-    }
-  }
-
-  /*---------------------------------------*/
-    /*marquee con css*/
-    @keyframes scrolling {
-      from {
-        transform: translateX(300%);
-      }
-      to {
-        transform: translateX(-200%);
-      }
-    }
-
   /* Header/banner */
   .header {
       background: url(../img/helados_01.jpg) no-repeat center; 
@@ -587,15 +567,6 @@
       .containerContactBig {
         flex-direction: column;
       }
-
-      @keyframes moveText {
-        from {
-          transform: translateX(150%);
-        }
-        to {
-          transform: translateX(-100%);
-        }
-      }
   }
   
     /* Responsive 700px wide */
@@ -606,27 +577,8 @@
       .containerContacto {
           width: 100%;
       }
+  }
 
-      @keyframes moveText {
-        from {
-          transform: translateX(100%);
-        }
-        to {
-          transform: translateX(-100%);
-        }
-      }
-  }
-  @media screen and (max-width: 380px) {
-      @keyframes moveText {
-        from {
-          transform: translateX(60%);
-        }
-        to {
-          transform: translateX(-100%);
-        }
-      }
-  }
-  
   @media (min-width: 768px) {
       .menu-desktop {
         display: flex;
