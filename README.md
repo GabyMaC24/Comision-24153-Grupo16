@@ -4,6 +4,9 @@ Bienvenidos a la Heladería "Frosty One-Page", un proyecto de sitio web en forma
 
 ## Secciones del Sitio
 
+### Header
+En esta seccion se muestra el menu de navegación y nuestras redes (formato desktop) que es responsivo adaptandose a distintas pantallas.
+
 ### Inicio
 En esta sección se presenta un carrusel (carousel) de Bootstrap con imágenes de nuestras increibles promociones.
 ![Promos](img/Promos/PromosSemana_01.png)
@@ -34,7 +37,7 @@ El footer del sitio web incluye información de derechos de autor, redes sociale
 
 - Gabriela Cinto
 - Lesliee Aquino
-- Felipe Grosiman
+- Felipe Groisman
 - Marcelo Motto
 
 ¡Esperamos que disfrutes de nuestra heladería virtual! Si tienes alguna pregunta o sugerencia, no dudes en contactarnos.
