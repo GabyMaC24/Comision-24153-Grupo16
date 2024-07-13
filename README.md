@@ -1,5 +1,5 @@
-# Heladería "Frosty One-Page"
-Bienvenidos a la Heladería "Frosty One-Page", un proyecto de sitio web en formato one-page que ofrece una experiencia única a nuestros clientes.
+# Heladería "Gallipoli"
+Bienvenidos a la Heladería "Gallipoli One-Page", un proyecto de sitio web en formato one-page que ofrece una experiencia única a nuestros clientes.
 ![Logo](img/helados_01.jpg)
 
 ## Secciones del Sitio
